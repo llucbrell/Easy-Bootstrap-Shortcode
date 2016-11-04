@@ -9,7 +9,7 @@
     <div class="ebs-pro-content" style="margin-top: 10px; text-align: center;">
         <?php
             $arg = array ( 'method' => 'GET');
-            $response = wp_remote_request ( 'http://offers.oscitas.com/index.php' , $arg );
+            $response = wp_remote_request ( 'http://docs.oscitasthemes.com/offers/index.php' , $arg );
             echo $response['body'];
         ?>
     </div>

@@ -39,8 +39,8 @@ function slider_render(ele,val,mini,max){
 }
 function ebs_return_html_servicebox(pluginObj){
     var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'">\
-        <span id="icon_bg_preview" class="iconcircle glyphicon glyphicon-cog"></span>\
-    <div id="osc-servicebox-scroll"><table id="oscitas-table" class="form-table">\
+        <span id="icon_bg_preview" class="iconcircle glyphicon glyphicon-cog ebs-default-options"></span>\
+    <div id="osc-servicebox-scroll" class="ebs-default-options"><table id="oscitas-table" class="form-table ebs-default-options">\
                         <tr class="show_boxtype_icon">\
                         <th><label for="oscitas-heading-icon">'+ebsjstrans.select+' '+ebsjstrans.icon+':</label></th>\
 				<td><div id="click_icon_list_servicebox" class="oscitas-icon-div"><span id="osc_show_icon_servicebox"></span><span class="show-drop"></span></div><input type="hidden" id="oscitas-servicebox-icon" value=""><input type="hidden" id="oscitas-servicebox-icontype" value="">\
@@ -149,9 +149,10 @@ function ebs_return_html_servicebox(pluginObj){
 				</td>\
 			</tr>\
 		</table></div>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-servicebox-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.servicebox+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/servicebox/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }
@@ -264,7 +265,7 @@ function create_oscitas_servicebox(pluginObj){
         });
         var selected_content = tinyMCE.activeEditor.selection.getContent();
         if(!selected_content) var selected_content = ebsjstrans.your+' '+ebsjstrans.content; //'Your Content';
-        var shortcode = '['+$ebs_prefix+'servicebox '+shortcodeattr+']'+selected_content+'[/servicebox]';
+        var shortcode = '['+$ebs_prefix+'servicebox '+shortcodeattr+']'+selected_content+'[/'+$ebs_prefix+'servicebox]';
 
         // inserts the shortcode into the active editor
         tinyMCE.activeEditor.selection.setContent(shortcode);

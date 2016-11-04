@@ -10,7 +10,7 @@ var buttons={
 
 function ebs_return_html_buttons(pluginObj){
 
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-button-style">Style:</label></th>\
 				<td><select name="type" id="oscitas-button-style">\
@@ -28,7 +28,7 @@ function ebs_return_html_buttons(pluginObj){
 				<th><label for="oscitas-button-size">Size:</label></th>\
 				<td><select name="type" id="oscitas-button-size">\
                         <option value="btn-lg">'+ebsjstrans.large+'</option>\
-                        <option value="btn-sm">'+ebsjstrans.Small+'</option>\
+                        <option value="btn-sm">'+ebsjstrans.small+'</option>\
                         <option value="btn-xs">'+ebsjstrans.exsmall+'</option>\
 				</select><br />\
 				</td>\
@@ -56,7 +56,7 @@ function ebs_return_html_buttons(pluginObj){
 				</td>\
 			</tr>\
 			<tr>\
-				<th><label for="oscitas-button-iconcolor">'+ebsjstrans.iconcolor+':</label></th>\
+				<th><label for="oscitas-button-iconcolor">'+ebsjstrans.icon+' '+ebsjstrans.color+':</label></th>\
 				<td><input type="text" name="label" id="oscitas-button-iconcolor" class="color" value="" /><br />\
 				</td>\
 			</tr>\
@@ -95,9 +95,10 @@ function ebs_return_html_buttons(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-button-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.button+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/buttons/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

@@ -8,7 +8,7 @@ var badge={
 })();
 
 function ebs_return_html_badge(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			 <tr>\
         <th><label for="oscitas-badge-bgcolor">'+ebsjstrans.bgcolor+'</label></th>\
         <td><input type="text" class="color" name="bgcolor" id="oscitas-badge-bgcolor" value="">\
@@ -34,10 +34,12 @@ function ebs_return_html_badge(pluginObj){
            </td>\
         </tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-badge-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.badge+'" name="submit" />\
 		</p>\
-		</div>');
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/badge/screenshot.jpg"/></div>\
+		</div>\
+		');
     return form;
 
 }

@@ -8,7 +8,7 @@ var wpcolumns={
 })();
 
 function ebs_return_html_wpcolumns(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-no-of-wpcolumns">'+ebsjstrans.noof+' '+ebsjstrans.columns+':</label></th>\
 				<td><select name="type" id="oscitas-no-of-wpcolumns">\
@@ -49,9 +49,10 @@ function ebs_return_html_wpcolumns(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-submit-wp_column" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.columns+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/wpcolumns/screenshot.jpg"/></div>\
 		</div>');
 
     return form;
@@ -337,7 +338,7 @@ function create_oscitas_wpcolumns(pluginObj){
                 lgclear='';
             }
 
-            shortcode += '<br/>['+$ebs_prefix+'column lg="'+a_lg[i]+'"'+md+sm+xs+mdoff+smoff+xsoff+lgoff+mdhide+smhide+xshide+lghide+mdclear+smclear+xsclear+lgclear+' ]<br/>ebsjstrans.text<br/>[/'+$ebs_prefix+'column]';
+            shortcode += '<br/>['+$ebs_prefix+'column lg="'+a_lg[i]+'"'+md+sm+xs+mdoff+smoff+xsoff+lgoff+mdhide+smhide+xshide+lghide+mdclear+smclear+xsclear+lgclear+' ]<br/>'+ebsjstrans.text+'<br/>[/'+$ebs_prefix+'column]';
         }
 
         shortcode += '<br/>[/'+$ebs_prefix+'row]';

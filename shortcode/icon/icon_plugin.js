@@ -9,7 +9,7 @@ var icon={
 
 function ebs_return_html_icon(pluginObj){
 
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
                         <tr>\
                         <th><label for="oscitas-heading-icon">'+ebsjstrans.select+' '+ebsjstrans.icon+':</label></th>\
 				<td><div id="click_icon_list_icon" class="oscitas-icon-div"><span id="osc_show_icon_icon"></span><span class="show-drop"></span></div><input type="hidden" id="osc_icon_class_val_icon" value="glyphicon-adjust">\
@@ -32,9 +32,10 @@ function ebs_return_html_icon(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-icon-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.icon+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/icon/screenshot.jpg"/></div>\
 		</div>');
 
     return form;

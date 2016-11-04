@@ -8,7 +8,7 @@ var labels={
 })();
 
 function ebs_return_html_labels(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-label-type">'+ebsjstrans.label+' '+ebsjstrans.type+':</label></th>\
 				<td>\
@@ -33,9 +33,10 @@ function ebs_return_html_labels(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-label-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.label+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/labels/screenshot.jpg"/></div>\
 		</div>');
     return form;
 

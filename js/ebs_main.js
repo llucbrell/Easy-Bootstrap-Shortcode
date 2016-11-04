@@ -19,7 +19,13 @@ function open_dialogue(pluginObj,width,height){
 
     var html_content=eval('ebs_return_html_'+pluginObj.pluginName+'(pluginObj)');
     html_content=jQuery(html_content).get(0).outerHTML;
-    var $template_markup='<div id="oscitas-easy-bootstrap-shortcode-container" '+$width+' class="osc-dialog oscitas-easy-bootstrap-shortcode mfp-ebsp"><h2>'+pluginObj.title+'</h2>'  +html_content+
+    var onClickHtml = '';
+    //alert(pluginObj.showprobtn);
+    if (pluginObj.showprobtn == undefined || pluginObj.showprobtn == true) {
+        onClickHtml = '';
+    }
+
+    var $template_markup='<div id="oscitas-easy-bootstrap-shortcode-container" '+$width+' class="osc-dialog oscitas-easy-bootstrap-shortcode mfp-ebsp"><h2>'+pluginObj.title+'</h2>'+onClickHtml  +html_content+
         '</div>';
 
     if(typeof(height)==='undefined') height = 'auto';
@@ -300,6 +306,8 @@ var iconsval= jQuery('<li type="glyphicon" data-value="glyphicon-asterisk"  clas
 <li type="glyphicon" data-value="glyphicon-stats"  class="glyphicon glyphicon-stats"> </li>\
 <li type="glyphicon" data-value="glyphicon-sd-video"  class="glyphicon glyphicon-sd-video"> </li>\
 <li type="glyphicon" data-value="glyphicon-hd-video"  class="glyphicon glyphicon-hd-video"> </li>\
+<li type="glyphicon" data-value="glyphicon-sd-audio"  class="glyphicon glyphicon-sd-audio"> </li>\
+<li type="glyphicon" data-value="glyphicon-hd-audio"  class="glyphicon glyphicon-hd-audio"> </li>\
 <li type="glyphicon" data-value="glyphicon-subtitles"  class="glyphicon glyphicon-subtitles"> </li>\
 <li type="glyphicon" data-value="glyphicon-sound-stereo"  class="glyphicon glyphicon-sound-stereo"> </li>\
 <li type="glyphicon" data-value="glyphicon-sound-dolby"  class="glyphicon glyphicon-sound-dolby"> </li>\

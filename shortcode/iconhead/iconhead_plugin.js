@@ -8,7 +8,7 @@ var iconhead={
 })();
 
 function ebs_return_html_iconhead(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-heading-icon">'+ebsjstrans.select+' '+ebsjstrans.icon+':</label></th>\
 				<td><div id="click_icon_list" class="oscitas-icon-div"><span id="osc_show_icon"></span><span class="show-drop"></span></div><input type="hidden" id="osc_icon_class_val" value="">\
@@ -43,9 +43,10 @@ function ebs_return_html_iconhead(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-iconhead-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.icon+' '+ebsjstrans.heading+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/iconhead/screenshot.jpg"/></div>\
 		</div>');
 return form;
 }

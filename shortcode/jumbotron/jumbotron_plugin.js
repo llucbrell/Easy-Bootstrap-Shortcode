@@ -8,7 +8,7 @@ var jumbotron={
 })();
 
 function ebs_return_html_jumbotron(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			   <tr>\
         <th><label for="oscitas-jumbotron-bgcolor">'+ebsjstrans.bgcolor+'</label></th>\
         <td><input type="text" class="color" name="bgcolor" id="oscitas-jumbotron-bgcolor" value="">\
@@ -19,9 +19,10 @@ function ebs_return_html_jumbotron(pluginObj){
            </td>\
         </tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-jumbotron-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.jumbotron+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/jumbotron/screenshot.jpg"/></div>\
 		</div>');
     return form;
 

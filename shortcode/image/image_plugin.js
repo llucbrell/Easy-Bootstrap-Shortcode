@@ -8,7 +8,7 @@ var image={
 })();
 
 function ebs_return_html_image(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 				<tr><th><label for="oscitas-label-content">'+ebsjstrans.upload+' '+ebsjstrans.image+':</label></th>\
 				<td id="osc_image_upload"><input id="oscitas-image-src" type="hidden" name="oscitas-thumbnail-src"  value="" />\
                                 <input id="_btn" class="upload_image_button" type="button" value="'+ebsjstrans.upload+' '+ebsjstrans.image+'" />\
@@ -29,9 +29,10 @@ function ebs_return_html_image(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-image-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.image+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/image/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

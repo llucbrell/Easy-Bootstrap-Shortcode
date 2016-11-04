@@ -8,7 +8,7 @@ var tables={
 })();
 
 function ebs_return_html_tables(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-table-width">'+ebsjstrans.table+' '+ebsjstrans.width+':</label></th>\
 				<td><input type="text" name="icontag" id="oscitas-table-width" value="100%" /><br />\
@@ -51,14 +51,15 @@ function ebs_return_html_tables(pluginObj){
 				</td>\
 			</tr>\
                         <tr>\
-				<th><label for="oscitas-table-class">'+ebsjstrans.custonclass+':</label></th>\
+				<th><label for="oscitas-table-class">'+ebsjstrans.customclass+':</label></th>\
 				<td><input type="text" name="line" id="oscitas-table-class" value=""/><br />\
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.table+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/tables/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

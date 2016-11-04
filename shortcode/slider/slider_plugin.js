@@ -43,7 +43,7 @@ function __slider_show_image_upload_icon(parent,ele){
 }
 function ebs_return_html_slider(pluginObj){
 
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table" style="margin-top: 0px;">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options" style="margin-top: 0px;">\
     <tr>\
 				<th><label for="oscitas-slider-class">'+ebsjstrans.slider+' '+ebsjstrans.interval+':</label></th>\
 				<td><input type="text" name="line" id="oscitas-slider-interval" value=""/><br />\
@@ -107,9 +107,10 @@ function ebs_return_html_slider(pluginObj){
                         </td>\
                     </tr>\
 		</table>\
-		<p class="submit" style="padding-right: 10px;text-align: right;">\
+		<p class="submit ebs-default-options" style="padding-right: 10px;text-align: right;">\
 			<input type="button" id="oscitas-slider-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.slider+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/slider/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }
@@ -157,8 +158,8 @@ function create_oscitas_slider(pluginObj){
         shortcode += ']';
         var row_attr={
             title:'',
-            image:'',
-            caption:''
+            image:''
+            //caption:''
         }
 
         form.find('tr.osc_dropdown_list_item').each(function(index){
@@ -174,7 +175,7 @@ function create_oscitas_slider(pluginObj){
                 attr+=' active="active"';
             }
 
-            shortcode+='<br/>['+$ebs_prefix+'slide'+attr+'/]';
+            shortcode+='<br/>['+$ebs_prefix+'slide'+attr+']'+$this.find('.oscitas-itemslider-caption').val()+'[/'+$ebs_prefix+'slide]';
 
 
         });

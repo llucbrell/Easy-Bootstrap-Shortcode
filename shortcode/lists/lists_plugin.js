@@ -8,7 +8,7 @@ var lists={
 })();
 
 function ebs_return_html_lists(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-type">'+ebsjstrans.list+' '+ebsjstrans.style+'</label></th>\
 				<td><select name="type" id="oscitas-type">\
@@ -31,9 +31,10 @@ function ebs_return_html_lists(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.list+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/lists/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

@@ -8,7 +8,7 @@ var oscpopover={
 })();
 
 function ebs_return_html_oscpopover(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-popover-style">'+ebsjstrans.popover+' '+ebsjstrans.style+':</label></th>\
 				<td><select name="oscitas-popover-style" id="oscitas-popover-style">\
@@ -44,7 +44,7 @@ function ebs_return_html_oscpopover(pluginObj){
 				<td><select name="size" id="oscitas-pbutton-size">\
                                 <option value="">'+ebsjstrans.default+'</option>\
                                 <option value="btn-lg">'+ebsjstrans.large+'</option>\
-                                <option value="btn-sm">'+ebsjstrans.Small+'</option>\
+                                <option value="btn-sm">'+ebsjstrans.small+'</option>\
                                 <option value="btn-xs">'+ebsjstrans.exsmall+'</option>\
 					</select><br />\
 				</td>\
@@ -73,9 +73,10 @@ function ebs_return_html_oscpopover(pluginObj){
 				</td>\
 			</tr>\
 </table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-popover-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.popover+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/oscpopover/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

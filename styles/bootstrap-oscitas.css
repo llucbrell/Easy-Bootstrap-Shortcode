@@ -6,7 +6,43 @@
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
+/* my plugin styles */
 
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.iframe-container-map{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container-map > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 /*.oscitas-bootstrap-container{*/
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     /*font-size: 14px;*/
@@ -34,6 +70,24 @@ video.oscitas-bootstrap-container,
 progress.oscitas-bootstrap-container {
   display: inline-block;
   vertical-align: baseline;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 audio.oscitas-bootstrap-container :not([controls]){

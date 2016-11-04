@@ -7,7 +7,7 @@ var deslist={
     _create_tinyMCE_options(deslist);
 })();
 function ebs_return_html_deslist(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-line">'+ebsjstrans.noof+' '+ebsjstrans.list+' '+ebsjstrans.item+'</label></th>\
 				<td><input type="text" name="line" id="oscitas-deslist-item" value="3"/><br /><small>'+ebsjstrans.enternumval+'</small>\
@@ -27,9 +27,10 @@ function ebs_return_html_deslist(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-deslist-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.list+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/deslist/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

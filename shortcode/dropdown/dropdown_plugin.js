@@ -8,7 +8,7 @@ var dropdown={
 })();
 
 function ebs_return_html_dropdown(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th class="main_dp_th"><label for="oscitas-dropdown-heading" >'+ebsjstrans.dropdown+' '+ebsjstrans.features+'</label></th>\
 				<td>\
@@ -74,9 +74,10 @@ function ebs_return_html_dropdown(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-dropdown-submit" class="button-primary" value="Insert Dropdown" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/dropdown/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

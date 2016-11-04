@@ -9,7 +9,7 @@ var progressbar={
 })();
 
 function ebs_return_html_progressbar(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-progressbar-style">'+ebsjstrans.progress+' '+ebsjstrans.bar+' '+ebsjstrans.type+':</label></th>\
 				<td><select name="type" id="oscitas-progressbar-style">\
@@ -50,9 +50,10 @@ function ebs_return_html_progressbar(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-progressbar-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.button+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/progressbar/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

@@ -8,7 +8,7 @@ var tooltip={
 })();
 
 function ebs_return_html_tooltip(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-tooltip-style">'+ebsjstrans.tooltip+' '+ebsjstrans.style+':</label></th>\
 				<td>\
@@ -50,14 +50,15 @@ function ebs_return_html_tooltip(pluginObj){
 				</td>\
 			</tr>\
                         <tr>\
-				<th><label for="oscitas-tooltip-class">'+ebsjstrans.customclasse+':</label></th>\
+				<th><label for="oscitas-tooltip-class">'+ebsjstrans.customclass+':</label></th>\
 				<td><input type="text" name="line" id="oscitas-tooltip-class" value=""/><br />\
 				</td>\
 			</tr>\
 </table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-tooltip-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.tooltip+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/tooltip/screenshot.jpg"/></div>\
 		</div>');
 
     return form;

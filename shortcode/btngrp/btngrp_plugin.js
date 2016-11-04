@@ -9,11 +9,11 @@ var btngrp={
 })();
 
 function ebs_return_html_btngrp(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options" width="100%">\
 			<tr>\
 				<th class="main_dp_th"><label for="oscitas-btngrp-heading" >'+ebsjstrans.btngrpftrs+'</label></th>\
 				<td>\
-                    <table class="tb_multiple_column_upper">\
+                    <table class="tb_multiple_column_upper" width="100%">\
                             <thead>\
                                 <tr><th>'+ebsjstrans.size+'</th><th>'+ebsjstrans.style+'</th></tr>\
                             </thead>\
@@ -22,7 +22,7 @@ function ebs_return_html_btngrp(pluginObj){
                                     <td><select name="type" id="oscitas-btngrp-size">\
                                             <option value="">'+ebsjstrans.default+'</option>\
                                             <option value="btn-lg">'+ebsjstrans.large+'</option>\
-                                            <option value="btn-sm">'+ebsjstrans.Small+'</option>\
+                                            <option value="btn-sm">'+ebsjstrans.small+'</option>\
                                             <option value="btn-xs">'+ebsjstrans.exsmall+'</option>\
                                         </select></td>\
                                     <td>\
@@ -40,7 +40,7 @@ function ebs_return_html_btngrp(pluginObj){
 			<tr>\
 				<th class="main_dp_th"><label for="oscitas-line">'+ebsjstrans.btngrp_items+'</label></th>\
 				<td>\
-				    <table class="tb_multiple_column">\
+				    <table class="tb_multiple_column" width="100%">\
                         <thead>\
                             <tr><th>'+ebsjstrans.style+'</th><th>'+ebsjstrans.type+'</th><th>'+ebsjstrans.link+'</th><th>'+ebsjstrans.newwindow+'</th><th>'+ebsjstrans.title+'</th><th>'+ebsjstrans.option+'</th></tr>\
                         </thead>\
@@ -94,9 +94,10 @@ function ebs_return_html_btngrp(pluginObj){
 				</td>\
 			</tr>\
     </table>\
-		<p class="submit">\
-			<input type="button" id="oscitas-btngrp-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.buttongrp+' '+ebsjstrans.grp+'" name="submit" />\
+		<p class="submit ebs-default-options">\
+			<input type="button" id="oscitas-btngrp-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.button+' '+ebsjstrans.grp+'" name="submit" />\
 		</p>\
+         <div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/btngrp/screenshot.jpg"/></div>\
 		</div>');
     return form;
 }

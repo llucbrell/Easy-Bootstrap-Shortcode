@@ -8,7 +8,7 @@ var well={
 })();
 
 function ebs_return_html_well(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 			<tr>\
 				<th><label for="oscitas-well-type">'+ebsjstrans.well+' '+ebsjstrans.type+':</label></th>\
 				<td><select name="type" id="oscitas-well-type">\
@@ -29,9 +29,10 @@ function ebs_return_html_well(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
+		<p class="submit ebs-default-options">\
 			<input type="button" id="oscitas-well-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.well+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/well/screenshot.jpg"/></div>\
 		</div>');
 
     return form;

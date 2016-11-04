@@ -8,7 +8,7 @@ var thumbnail={
 })();
 
 function ebs_return_html_thumbnail(pluginObj){
-    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table">\
+    var form = jQuery('<div id="'+pluginObj.id+'" class="oscitas-container" title="'+pluginObj.title+'"><table id="oscitas-table" class="form-table ebs-default-options">\
 				<th><label for="oscitas-label-content">'+ebsjstrans.upload+' '+ebsjstrans.image+':</label></th>\
 				<td id="osc_thumbnail_upload"><input id="oscitas-thumbnail-src" type="hidden" name="oscitas-thumbnail-src"  value="" />\
                                 <input id="_btn" class="upload_image_button" type="button" value="'+ebsjstrans.upload+' '+ebsjstrans.image+'" />\
@@ -40,9 +40,10 @@ function ebs_return_html_thumbnail(pluginObj){
 				</td>\
 			</tr>\
 		</table>\
-		<p class="submit">\
-			<input type="button" id="oscitas-thumbnail-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.thumnail+'" name="submit" />\
+		<p class="submit ebs-default-options">\
+			<input type="button" id="oscitas-thumbnail-submit" class="button-primary" value="'+ebsjstrans.insert+' '+ebsjstrans.thumbnail+'" name="submit" />\
 		</p>\
+		<div class="pro-version-image aligncenter" style="display: none;"><img src="'+ebs_url+'shortcode/thumbnail/screenshot.jpg"/></div>\
 		</div>');
 
     return form;
