@@ -1,7 +1,7 @@
 <?php
 
 /*
-  Plugin Name: Hackmers Bootstrap Shortcodes
+  Plugin Name: Hack Bootstrap Shortcodes
   Plugin URI: 
   Description: Add bootstrap 3.0.3 styles to your theme by wordpress editor shortcode buttons.
   Version: 0.0.1
