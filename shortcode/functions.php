@@ -216,6 +216,16 @@ function ebs_shortcodes($shortcodes=array())
 					'width' => '',
 					'height' => '',
 			),
+			'header' => array('group' => 'content',
+					'name' => 'Header',
+					'width' => '',
+					'height' => '',
+			),
+			'transition' => array('group' => 'content',
+					'name' => 'Transition',
+					'width' => '',
+					'height' => '',
+			),
 			//'boxesframes' => array('group' => 'miscellaneous',
 			//		'name' => 'Boxframe',
 			//		'width' => 930,
@@ -675,7 +685,8 @@ function ebs_js_translation_assets($hook) {
 
 			'wembed' => __( ' Whatever embed-code', 'easy-bootstrap-shortcodes' ),
 			'embed' => __( ' embed-code', 'easy-bootstrap-shortcodes' ),
-
+			'header' => __( ' Header', 'easy-bootstrap-shortcodes' ),
+			'transition' => __( ' Transition', 'easy-bootstrap-shortcodes' ),
 
 
 			'your' => __( 'Your', 'easy-bootstrap-shortcodes' ),

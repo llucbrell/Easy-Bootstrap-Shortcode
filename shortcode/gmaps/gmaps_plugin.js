@@ -41,7 +41,7 @@ function create_oscitas_gmaps(pluginObj){
         var miWidth , miHeight;
 
         var cusclass= ' class="'+table.find('#oscitas-embed-class').val();
-        var embedurl= '<div '+ cusclass + ' iframe-container"' + '>' + table.find('#oscitas-embed-link').val() + '</div>';
+        var embedurl= '<div '+ cusclass + ' iframe-container text-center"' + '>' + table.find('#oscitas-embed-link').val() + '</div>';
 
         
          var shortcode = embedurl;
